@@ -1,10 +1,5 @@
-import React, { FC, CSSProperties, ReactNode } from 'react';
-
-interface BoxProps {
-  style?: CSSProperties;
-  onClick?: () => void;
-  children: ReactNode;
-}
+import { FC } from 'react';
+import { BoxProps } from '../typings';
 
 export const Box: FC<BoxProps> = ({ children, style, onClick }) => {
   return (
